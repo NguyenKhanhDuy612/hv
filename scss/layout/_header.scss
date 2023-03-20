@@ -5,31 +5,81 @@
 //     background-color: red;
 // }
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // margin: auto;
+    // width: 100%;
+}
+.header__top--main{
+    background-color: #0e2244;
+    height: 42px;
+}
+.header__bottom--main{
+    background-color: #142c54;
+    height: 72px;
 }
 header{
+    margin: auto;
     width: 1600px;
-    height: 159px;
-
+    // height: 159px;
+    // display: flex;
+    // background-color: #0e2244;
+    
     .header {
         &__top{
-            height: 40px;
+            height: 42px;
             float: right;
             color: #fff;
             display: flex;
-            background-color: #0e2244;
-
-    
+            justify-content: center;
+            align-items: center;
+            
             &--text{
-                padding: 20px   ;
+                padding-left: 20px   ;
                 
             }
         }
         &__bottom{
-            background-color: #142c54;
-            height: 70px;
+            // background-color: #142c54;
+            // height: 72px;
+            
+            .logo img{
+                width: 113px;
+                position: relative;
+                top: 25px;
+                left: 0;
+            
+            }
+
+            .menu__header ul{
+                display: flex;
+                float: right;
+                position: relative;
+                top: -95px;
+                right: 0;
+
+                li{
+                    margin: 0 20px;
+
+                    .donate{
+                        height: 72px;
+                        color: #142c54;
+                        padding: 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        background-color: #ffcd00;
+                        position: relative;
+                        top: -18px;
+                        right: 0;
+
+                        img{
+                            height: 20px;
+                            padding-right: 5px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
