@@ -1,0 +1,38 @@
+// Header
+
+// header{
+//     width: 100%;
+//     background-color: red;
+// }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    width: 1600px;
+    height: 159px;
+
+    .header {
+        &__top{
+            height: 40px;
+            float: right;
+            color: #fff;
+            display: flex;
+            background-color: #0e2244;
+
+    
+            &--text{
+                padding: 20px   ;
+                
+            }
+        }
+        &__bottom{
+            background-color: #142c54;
+            height: 70px;
+        }
+    }
+}
+
+
+
