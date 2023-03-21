@@ -16,6 +16,7 @@
 @import "layout/header";
 @import "layout/navigation";
 @import "layout/sidebar";
+@import "layout/banner";
 
 //Themes
 @import "themes/theme";
@@ -31,3 +32,9 @@
 @import "components/carousel";
 @import "components/popup";
 @import "components/slider";
+@import "components/featured";
+@import "components/about";
+@import "components/newsletter";
+@import "components/logo";
+@import "components/content";
+@import "components/search";

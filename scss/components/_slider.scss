@@ -1,11 +1,44 @@
 // Slider
-.slider{
-    
-    width: 1600px;
-    margin: auto;
-    margin-top: 0;
-    .slider__img{
-        width: 1600px;
-        height: 630px;
+.slider {
+  //
+  margin: auto;
+  margin-top: 0;
+  background-color: antiquewhite;
+  background-image: url(./img/slider.svg);
+  background-size: cover;
+  height: 630px;
+  .slider__title {
+    color: #ffffff;
+    font-size: 70px;
+    line-height: 73px;
+    width: 638px;
+    height: 156px;
+    padding-top: 140px;
+  }
+  .slider__text {
+    width: 664px;
+    height: 108px;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: -0.2px;
+    padding-top: 165px;
+  }
+  .btn__apply {
+    position: relative;
+    left: 0;
+    top: 135px;
+    width: 141.9px;
+    height: 55px;
+  }
+  .icon__arrow {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 45px;
+
+    .arrow__left,
+    .arrow__right {
+      cursor: pointer;
     }
+  }
 }

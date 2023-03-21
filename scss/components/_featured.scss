@@ -1,0 +1,23 @@
+.featured {
+  height: 242px;
+  background: #f1f6ff;
+  padding: 50px 0;
+  margin: auto;
+
+  .featured__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .featured__bt {
+      width: 436px;
+      height: 148px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 10px;
+      border-radius: 8px;
+      background: #142c54;
+    }
+  }
+}

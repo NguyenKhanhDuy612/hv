@@ -1,56 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACA</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- hedder -->
     <header class="header">
-        <div class="header__top--main">        
-            <div class="container">
-                <div class="header__top">      
-                        <p class="header__top--text header__top--search">
-                            Search
-                        </p>
-                        <p class="header__top--text header__top--us">
-                            Contact Us
-                        </p>
-                </div>
-            </div>
+      <div class="header__top--main">
+        <div class="container">
+          <div class="header__top">
+            <p class="header__top--text header__top--search">Search</p>
+            <p class="header__top--text header__top--us">Contact Us</p>
+          </div>
         </div>
-        <div class="header__bottom--main">    
-            <div class="container">
-                <div class="header__bottom">
-                    <div class="logo">
-                        <img src="./img/logo.svg" alt="">
-                    </div>
-                    <div class="menu__header">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Learn</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Find a school</a></li>
-                            <li><a href="#">Star a School</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">
-                                <div class="donate">
-                                    <img src="./img/icon_donate.png" alt="">
-                                    <p class="text">DONATO</p>
-                                </div>
-                            </a></li>
-                        </ul>
-                    </div>
-                </div>
+      </div>
+      <div class="header__bottom--main">
+        <div class="container">
+          <div class="header__bottom">
+            <div class="logo">
+              <a href="./index.html"><img src="./img/logo.svg" alt="" /></a>
+              
             </div>
+            <div class="menu__header">
+              <ul>
+                <li><a class="h_color" href="#">Home</a></li>
+                <li><a class="h_color" href="#">Learn</a></li>
+                <li><a class="h_color" href="#">About Us</a></li>
+                <li><a class="h_color" href="#">Find a school</a></li>
+                <li><a class="h_color" href="#">Star a School</a></li>
+                <li><a class="h_color" href="#">Careers</a></li>
+                <li>
+                  <a href="/donate.html">
+                    <img src="./img/icon_donate.png" alt="" />
+                    <span class="text bold__text">DONATO</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        
+      </div>
     </header>
-
+    <!-- slider -->
     <div class="slider">
-        <div class="slider__img"><img src="./img/slider.svg" alt=""></div>
+      <div class="container">
+        <div class="slider__title">Prepare your child to flourish in life</div>
+        <div class="slider__text">
+          Ascent Classical Academies train the minds and improve the hearts of
+          young people through a classical, content-rich education in the
+          liberal arts and sciences, with instruction in the principles of moral
+          character and civic virtue in an orderly and disciplined environment.
+        </div>
+        <button class="btn__apply btn-yl">
+          APPLY
+          <img src="./img/arrow-right-solid.svg" alt="" />
+        </button>
+      </div>
+      <div class="icon__arrow">
+        <div class="arrow__left">
+          <img src="./img/arrow1.svg" alt="" />
+        </div>
+        <div class="arrow__right">
+          <img src="./img/arrow.svg" alt="" />
+        </div>
+      </div>
     </div>
-</body>
+    <!-- Featured -->
+    <section class="featured">
+      <div class="container">
+        <div class="featured__main">
+          <button class="featured__bt btn btn-primary">
+            <p class="featured__text">Find a School</p>
+            <img src="./img/search.svg" alt="search" />
+          </button>
+          <button class="featured__bt btn btn-primary">
+            <p class="featured__text">AVAILABLE POSITIONS</p>
+            <img src="./img/check.svg" alt="check" />
+          </button>
+          <button class="featured__bt btn btn-primary">
+            <p class="featured__text">MISSION & VISION</p>
+            <img src="./img/bullseye.svg" alt="bullseye" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- about -->
+    <section class="about">
+      <div class="container">
+        <div class="about__main">
+          <!-- articles -->
+          <div class="about_size articles">
+            <div class="articles__title about__title">Latest News</div>
+            <div class="articles__img">
+              <img src="./img/Articles.svg" alt="Articles" />
+            </div>
+            <div class="articles__text about__text">
+              The Middle School Girls' Basketball team are the Northern Colorado
+              Independent League Champs! They finished their season with an…
+            </div>
+            <div class="articles__read text__read">READ MORE</div>
+          </div>
+          <!-- testimonials -->
+          <div class="about_size testimonials">
+            <div class="testimonials__title about__title">Testimonials</div>
+            <div class="testimonials__mid">
+              <div class="testimonials__text about__text">
+                "Although Ascent's academics are impressive, what stands out to
+                me is their
+                <span class="bold__text"
+                  >commitment to character development.</span
+                >
+                <br />
+                These students learn from day one
+                <span class="bold__text"
+                  >to value friendship, work as a team, and engage</span
+                >
+                in curious and passionate academic inquiry. I've never seen kids
+                so engaged in the classroom. We were skeptical of our…"
+                <div class="testimonials__read text__read">READ MORE</div>
+              </div>
+            </div>
+            <div class="testimonials__bottom">
+              <div class="testimonials__bottom--accout">
+                <img src="./img/avata.svg" alt="avata" />
+              </div>
+              <div class="testimonials__bottom--name">
+                <p class="accout__btname">
+                  <span class="bold__text">Nicolas Jossi,</span> <br />
+                  A parent from Windsor, CO
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Purpose -->
+          <div class="about_size purpose">
+            <div class="purpose__tittle">Our Purpose</div>
+            <div class="purpose__text">
+              Ascent Classical Academies develop within its students the moral
+              and intellectual skills, habits, and virtues upon which
+              independent, responsible, and joyful lives are built, in the firm
+              belief that such lives are the basis for a free and flourishing
+              republic.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter__main">
+          <div class="row">
+            <div class="col-6">
+              <div class="newsletter__text">
+                Sign up for our newsletter to get the latest
+                <br />
+                updates about Ascent Classical Academies
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="newsletter__right">
+                <div class="newsletter__email">
+                  <input
+                    type="text"
+                    placeholder="Enter your email"
+                    class="input__email"
+                  />
+                  <button class="newsletter__btn btn-yl">
+                    <span class="bold__text">SUBSCRIBE</span>
+
+                    <img src="./img/liter.svg" alt="letter" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="footer__left">
+              <div class="logo">
+                <img src="./img/logo.svg" alt="" />
+              </div>
+              <div class="footer__left--text">
+                <div class="footer__title bold__text">
+                  Ascent Classical Academies
+                </div>
+                <div class="footer__text">
+                  <p>4690 Table Mountain Dr, Ste 100, Golden, CO 80403</p>
+                  <p>720-728-6300</p>
+                  <p>info@ascentclassical.org</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="footer__right">
+              <ul class="dpl">
+                <li><a class="footer__color" href="">About Ascent</a></li>
+                <li><a class="footer__color" href="">Mission & Vision</a></li>
+                <li><a class="footer__color" href="">Leadership</a></li>
+                <li><a class="footer__color" href="">Contact Us</a></li>
+              </ul>
+              <ul class="dpl">
+                <li>
+                  <a class="footer__color" href=""
+                    >Federal Transparency in Coverage Disclosures</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__color" href=""
+                    >Title IX and Non-Discrimination</a
+                  >
+                </li>
+              </ul>
+
+              <div class="scial">
+                <div class="fotter__icon">
+                  <img src="./img/icon__link/Facebook.svg" alt="" />
+                </div>
+                <div class="fotter__icon">
+                  <img src="./img/icon__link/LinkedIN.svg" alt="" />
+                </div>
+                <div class="fotter__icon">
+                  <img src="./img/icon__link/Youtube.svg" alt="" />
+                </div>
+                <div class="fotter__icon">
+                  <img src="./img/icon__link/Instagram.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row"></div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">©2022 Ascent Classical Academies</div>
+      </div>
+    </footer>
+  </body>
 </html>
