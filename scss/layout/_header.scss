@@ -37,34 +37,6 @@ header {
 
     .header__bottom {
       display: flex;
-
-      .menu__header {
-        margin-left: auto;
-
-        ul {
-          margin-bottom: 0;
-          display: flex;
-          align-items: center;
-
-          li {
-            margin-right: 55px;
-            &:last-child {
-              margin-right: 0;
-              margin-left: 5px;
-              color: $color-text;
-              padding: 24px 30px;
-              display: flex;
-              justify-content: space-between;
-              background-color: #ffcd00;
-
-              img {
-                height: 20px;
-                padding-right: 5px;
-              }
-            }
-          }
-        }
-      }
     }
   }
 }
@@ -77,10 +49,6 @@ header {
     img {
       max-width: 100%;
     }
-  }
-  .donate__mobile,
-  .menu__mobile {
-    display: none;
   }
 }
 @media screen and (max-width: 992px) {
@@ -97,24 +65,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .menu__mobile {
-          display: block;
-        }
-        .logo {
-          position: relative;
-          top: 2px;
-          left: 0px;
-          img {
-            width: 86px;
-          }
-        }
-        .donate__mobile {
-          display: block;
-        }
       }
     }
-  }
-  .menu__header {
-    display: none;
   }
 }
