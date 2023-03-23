@@ -1,0 +1,40 @@
+// If you want to override variables do it here
+@import "abstracts/variables";
+@import "bootstrap/bootstrap.scss";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+//Base
+@import "base/reset";
+@import "base/typography";
+@import "base/fonts";
+
+//Layout
+@import "layout/footer";
+@import "layout/forms";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/sidebar";
+@import "layout/banner";
+
+//Themes
+@import "themes/theme";
+
+//Vendors
+@import "vendors/bootstrap";
+@import "vendors/jquery-ui";
+
+//===Pages===
+
+//===Component===
+@import "components/buttons";
+@import "components/carousel";
+@import "components/popup";
+@import "components/slider";
+@import "components/featured";
+@import "components/about";
+@import "components/newsletter";
+@import "components/logo";
+@import "components/content";
+@import "components/search";

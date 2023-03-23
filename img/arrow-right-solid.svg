@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="filter_1">
+      <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.078431375 0 0 0 0 0.17254902 0 0 0 0 0.32941177 0 0 0 1 0" />
+    </filter>
+  </defs>
+  <g id="arrow-right-solid" filter="url(#filter_1)">
+    <path d="M18 6L17.2895 5.28368L12.7622 0.719493L12.0485 0L10.6274 1.43582L11.338 2.15214L14.1487 4.98574L1.00606 4.98574L2.84772e-14 4.98574L2.84772e-14 7.01426L1.00606 7.01426L14.1455 7.01426L11.3348 9.84786L10.6274 10.5642L12.0485 12L12.759 11.2837L17.2863 6.71949L18 6Z" id="Path" fill="#000000" stroke="none" />
+  </g>
+</svg>

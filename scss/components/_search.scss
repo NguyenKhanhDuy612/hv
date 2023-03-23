@@ -1,0 +1,25 @@
+.search {
+
+    height: 55px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f1f6ff;
+
+    .input__search--donate {
+      width: 80%;
+      height: 55px;
+      background: #f1f6ff;
+      font-size: 16px;
+      padding-left: 20px;
+      border-radius: 8px;
+    }
+    .btn__search {
+      width: 55px;
+      height: 55px;
+      background: $color-text;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }

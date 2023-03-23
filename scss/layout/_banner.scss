@@ -1,0 +1,77 @@
+// banner
+.cl__text {
+  color: #ffcd00;
+}
+.cl__textbl {
+  color: $color-text;
+}
+
+.banner {
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  background-size: cover;
+  background-image: url(../../img/banner/Banner__donate.svg);
+
+  // height: 391.84px;
+  background-size: 100%;
+  margin: auto;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(
+      274deg,
+      rgba(20, 44, 84, 0) 0%,
+      rgba(20, 44, 84, 1) 50%,
+      rgba(20, 44, 84, 1) 100%
+    );
+    mix-blend-mode: multiply;
+    opacity: 0.8;
+    z-index: 1;
+  }
+  .banner__text {
+
+    color: #ffffff;
+    font-family: "Baskerville-Bold";
+    position: relative;
+
+    z-index: 2;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .banner {
+    .banner__text {
+      padding-top: 110px;
+      padding-bottom: 112px;
+      font-size: 70px;
+      font-weight: 400;
+      line-height: 73px;
+      letter-spacing: -2.931818px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner {
+    background-image: none;
+    background-color: $color-text;
+    &:before {
+      background: none;
+    }
+
+    .banner__text {
+      padding-top: 34px;
+      padding-bottom: 20px;
+      font-size: 30.6px;
+      font-weight: 400;
+      line-height: 36.9px;
+      text-align: center;
+      letter-spacing: -1.2816232px;
+    }
+  }
+}

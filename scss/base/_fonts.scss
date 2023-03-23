@@ -1,0 +1,65 @@
+// font-weight --> font-style (format: ttf(truetype) woff woff2 ()
+// Baskerville
+@font-face {
+  font-family: 'Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../fonts/Baskerville/Baskerville-01.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Baskerville';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../fonts/Baskerville/Baskerville-Italic-03.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Baskerville';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../../fonts/Baskerville/Baskerville-Bold-02.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Baskerville';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(../../fonts/Baskerville/Baskerville-BoldItalic-04.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Baskerville';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../../fonts/Baskerville/Baskerville-SemiBold-05.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Baskerville';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../../fonts/Baskerville/Baskerville-SemiBoldItalic-06.ttf) format('truetype');
+}
+// Baskerville
+// Open Sans
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 600;
+//   font-display: swap;
+//   src: url(../../fonts/Open_Sans/static/OpenSans/OpenSans-Bold.ttf) format('truetype');
+// }
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: italic;
+//   font-weight: 600;
+//   font-display: swap;
+//   src: url(../../fonts/Open_Sans/static/OpenSans/OpenSans-BoldItalic.ttf) format('truetype');
+// }
+// Open Sans
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}

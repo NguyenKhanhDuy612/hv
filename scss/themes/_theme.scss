@@ -1,0 +1,17 @@
+// Default theme
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.screen {
+  margin: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    padding: 0;
+  }
+}
