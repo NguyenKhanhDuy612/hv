@@ -1,6 +1,5 @@
 // Header
 
-
 .h_color {
   color: white;
 }
@@ -20,30 +19,28 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-
       .header__top--text {
-        padding-left: 20px;
+        padding-left: 46px;
         margin-bottom: 0;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19px;
+        opacity: 0.7;
       }
     }
   }
   .header__bottom--main {
-    background-color: #142c54;
+    background-color: $color-text;
+    position: relative;
+    // height: 71px;
+
     .header__bottom {
       display: flex;
-      height: 71px;
-      .logo {
-        position: relative;
-        top: -7px;
-        left: 0;
-        width: 113px;
-        img {
-          max-width: 100%;
-        }
-      }
 
       .menu__header {
         margin-left: auto;
+
         ul {
           margin-bottom: 0;
           display: flex;
@@ -54,9 +51,8 @@ header {
             &:last-child {
               margin-right: 0;
               margin-left: 5px;
-              height: 71px;
-              color: #142c54;
-              padding: 20px;
+              color: $color-text;
+              padding: 24px 30px;
               display: flex;
               justify-content: space-between;
               background-color: #ffcd00;
@@ -70,5 +66,55 @@ header {
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .logo {
+    position: absolute;
+    top: -7px;
+    width: 113px;
+    img {
+      max-width: 100%;
+    }
+  }
+  .donate__mobile,
+  .menu__mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header__top--main {
+    display: none;
+  }
+  .mobile__header {
+    // background-color: #ffcd00;
+    // height: 113px;
+    .header__bottom--main {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      .header__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .menu__mobile {
+          display: block;
+        }
+        .logo {
+          position: relative;
+          top: 2px;
+          left: 0px;
+          img {
+            width: 86px;
+          }
+        }
+        .donate__mobile {
+          display: block;
+        }
+      }
+    }
+  }
+  .menu__header {
+    display: none;
   }
 }

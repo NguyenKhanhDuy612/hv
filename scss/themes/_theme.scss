@@ -9,3 +9,9 @@ a {
 .screen {
   margin: auto;
 }
+
+@media screen and (min-width: 992px) {
+  .container {
+    padding: 0;
+  }
+}

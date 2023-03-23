@@ -1,44 +1,98 @@
 // Slider
+
 .slider {
-  //
-  margin: auto;
+  position: relative;
   margin-top: 0;
-  background-color: antiquewhite;
+  // background-color: antiquewhite;
   background-image: url(./img/slider.svg);
   background-size: cover;
-  height: 630px;
-  .slider__title {
-    color: #ffffff;
-    font-size: 70px;
-    line-height: 73px;
-    width: 638px;
-    height: 156px;
-    padding-top: 140px;
-  }
-  .slider__text {
-    width: 664px;
-    height: 108px;
-    color: #ffffff;
-    font-size: 20px;
-    line-height: 27px;
-    letter-spacing: -0.2px;
-    padding-top: 165px;
-  }
-  .btn__apply {
-    position: relative;
-    left: 0;
-    top: 135px;
-    width: 141.9px;
-    height: 55px;
-  }
-  .icon__arrow {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 45px;
+  padding-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    .arrow__left,
-    .arrow__right {
-      cursor: pointer;
+  &__center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .slider__title {
+      color: #ffffff;
+      // font-size: 70px;
+
+      // width: 638px;
+      // height: 156px;
+      font-family: "Baskerville-Bold";
+    }
+    .slider__text {
+      padding-bottom: 35px;
+      color: #ffffff;
+      font-family: "Open Sans", sans-serif;
     }
   }
+
+  .icon__arrow {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 37px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .slider {
+    height: 636px;
+    .slider__title {
+      font-size: 70px;
+      line-height: 73px;
+    }
+    .slider__text {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 27px;
+      letter-spacing: -0.2px;
+    }
+  }
+  .mb__img--header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mb__img--header {
+    display: block;
+
+    img {
+      width: 100%;
+    }
+  }
+  .slider {
+    height: 100%;
+    background-image: none;
+    background: $color-text;
+    .slider__title {
+      padding-bottom: 35px;
+
+      font-size: 34px;
+      text-align: center;
+      line-height: 41px;
+    }
+    .slider__text {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: -0.24375px;
+    }
+    .icon__arrow {
+      display: none;
+    }
+  }
+}
+
+// golbal
+.arrow__left,
+.arrow__right {
+  cursor: pointer;
 }

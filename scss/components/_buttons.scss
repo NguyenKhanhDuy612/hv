@@ -1,5 +1,5 @@
 // Buttons
-$btn-primary: #142c54;
+$btn-primary: $color-text;
 
 button {
   border: none;
@@ -17,14 +17,33 @@ button {
 }
 
 .submit {
-  width: 376px;
+  width: 100%;
   height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  .text__submit {
-    padding-right: 10px;
-    margin: 0;
+  margin-top: 10px;
+}
+.text__submit {
+  margin: 0;
+  margin-right: 13px;
+}
+
+.btn__apply {
+  color: $color-text;
+  font-family: "Open Sans";
+}
+
+@media screen  and (min-width: 992px) {
+  .btn__apply {
+    margin-top: 41px;
+    width: 141.9px;
+    height: 55px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .btn__apply {
+    width: 100%;
+    height: 55px;
   }
 }
