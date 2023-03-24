@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -36,13 +41,13 @@
             <div class="logo">
               <a href="./index.html"><img src="./img/logo.svg" alt="" /></a>
             </div>
-            <div class="menu__header">
+            <div class="menu__header--desktop">
               <ul class="">
                 <li><a class="h_color" href="#">Home</a></li>
                 <li><a class="h_color" href="#">Learn</a></li>
                 <li><a class="h_color" href="#">About Us</a></li>
-                <li><a class="h_color" href="#">Find a school</a></li>
-                <li><a class="h_color" href="#">Star a School</a></li>
+                <li><a class="h_color" href="#">Find a School</a></li>
+                <li><a class="h_color" href="#">Start a School</a></li>
                 <li><a class="h_color" href="#">Careers</a></li>
                 <li>
                   <a href="/donate.html">
@@ -61,16 +66,37 @@
         </div>
       </div>
     </header>
+    <section class="menu__header--mobile">
+      <div class="menu__header-mb">
+        <div class="close"><img src="./img/mobile/close.svg" alt="" /></div>
+        <ul class="">
+          <li><a class="" href="#">Home</a></li>
+          <li><a class="" href="#">Learn</a></li>
+          <li><a class="" href="#">About Us</a></li>
+          <li><a class="" href="#">Find a school</a></li>
+          <li><a class="" href="#">Star a School</a></li>
+          <li><a class="" href="#">Careers</a></li>
+          <li>
+            <a href="/donate.html">
+              <img src="./img/icon_donate.png" alt="" />
+              <span class="cl__textbl bold__text">DONATE</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
     <main>
       <!-- slider -->
-      <div class="slider">
+      <div class="slider slider__img">
+        <!-- <img src="./img/banner/slide1.jpg" alt="" /> -->
+        <!-- text and button in the slide -->
         <div class="container">
           <div class="slider__center">
             <div class="row">
               <div class="col-lg-7">
                 <div class="slider__title">
                   Prepare your child to
-                  <span class="cl__text">flourish</span> in life
+                  <span class="cl__text text__italic">flourish</span> in life
                 </div>
                 <div class="slider__text">
                   Ascent Classical Academies train the minds and improve the
@@ -87,15 +113,67 @@
             </div>
           </div>
         </div>
+        <!-- slider swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/banner/slider4.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner/slider5.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner/slide1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner/slider2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner/slider3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner/slide1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner/slider2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner/slider3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner/slide1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner/slider2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner/slider3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner/slide1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner/slider2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/banner/slider3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- end slide  -->
+
         <!-- btn prev next  -->
-        <div class="icon__arrow">
+        <!-- <div class="icon__arrow">
           <div class="arrow__left">
             <img src="./img/arrow1.svg" alt="" />
           </div>
           <div class="arrow__right">
             <img src="./img/arrow.svg" alt="" />
           </div>
-        </div>
+        </div> -->
         <!-- btn prev next  -->
       </div>
       <!-- img header mobile -->
@@ -318,6 +396,18 @@
         <div class="container">©2022 Ascent Classical Academies</div>
       </div>
     </footer>
+    <!-- close menu -->
     <script src="./main.js"></script>
+    <!-- slider swiper  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

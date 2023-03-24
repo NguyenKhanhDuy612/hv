@@ -6,7 +6,7 @@
 
 header {
   position: relative;
-  z-index: 2;
+  z-index: 9;
   margin: auto;
   .header__top--main {
     background-color: #0e2244;
@@ -19,6 +19,7 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
+      
       .header__top--text {
         padding-left: 46px;
         margin-bottom: 0;
@@ -37,6 +38,13 @@ header {
 
     .header__bottom {
       display: flex;
+
+      .menu__header--desktop{
+        font-family: "Open Sans";
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 20px;
+      }
     }
   }
 }
