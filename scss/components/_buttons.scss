@@ -26,7 +26,7 @@ button {
 }
 .text__submit {
   margin: 0;
-  margin-right: 13px;
+  margin-right: 8px;
 }
 
 .btn__apply {
@@ -36,9 +36,10 @@ button {
 
 @media screen  and (min-width: 992px) {
   .btn__apply {
-    margin-top: 41px;
+    margin-top: 7px;
     width: 141.9px;
     height: 55px;
+    padding-left: 12px;
   }
 }
 @media screen and (max-width: 992px) {

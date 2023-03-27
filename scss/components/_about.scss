@@ -13,8 +13,11 @@
       .articles__img {
         // margin: 10px 0;
       }
+      .about__text {
+        font-family: "Open Sans";
+      }
       .articles__text {
-        margin-top: 24px;
+        margin-top: 20px;
         margin-bottom: 11px;
       }
     }
@@ -78,7 +81,13 @@
     .about__main {
       margin-top: 61px;
       // margin-bottom: 81px;
-
+      .articles {
+        padding-right: 36px;
+      }
+      .articles__img {
+        // padding-right: 36px;
+        padding-top: 6px;
+      }
       .about__title {
         font-size: 30px;
         font-weight: 600;
@@ -86,10 +95,19 @@
         letter-spacing: -1.2564934px;
       }
       .about__text {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 500;
-        line-height: 25px;
-        letter-spacing: -0.18px;
+        line-height: 22px;
+        letter-spacing: -0.16px;
+      }
+    }
+    .testimonials {
+      .testimonials__mid {
+        .testimonials__text {
+          font-size: 18px;
+          line-height: 25px;
+          letter-spacing: -0.18px;
+        }
       }
     }
   }
@@ -98,6 +116,7 @@
 @media screen and (max-width: 992px) {
   .about {
     margin-bottom: 0px;
+
     .about__title {
       color: $color-text;
 
