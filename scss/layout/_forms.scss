@@ -46,7 +46,7 @@ input {
         height: 50px;
         background: #ffffff;
         border-radius: 8px;
-        border: solid 1px #dce3f0;
+        // border: solid 1px #dce3f0;
       }
       .type__text {
         width: 100%;
@@ -59,6 +59,17 @@ input {
         padding-top: 14px;
         padding-left: 22px;
         padding-right: 20px;
+        padding-bottom: 12px;
+      }
+      .error,
+      .errorPhone,
+      .errorEmail {
+        display: none;
+        font-size: 10px;
+        letter-spacing: normal;
+        line-height: inherit;
+        padding-top: 13px;
+        color: red;
       }
     }
     .form__info--bottom {
@@ -66,9 +77,9 @@ input {
       justify-content: space-between;
 
       .state {
-          position: relative;
+        position: relative;
         .icon__down {
-          position:absolute;
+          position: absolute;
           // width: 7.62px;
           // height: 3.81px;
           top: 25px;
@@ -78,13 +89,10 @@ input {
       }
     }
   }
-  
 }
 
 @media screen and (max-width: 992px) {
-  .form .form__info .form__info--bottom{
+  .form .form__info .form__info--bottom {
     flex-direction: column;
   }
 }
-
-
