@@ -102,7 +102,7 @@
       position: absolute;
       // width: 7.62px;
       // height: 3.81px;
-      top: 25px;
+      top: 17px;
       right: 25px;
       // background: $color-text;
     }
@@ -163,6 +163,12 @@ small {
     font-size: 16px;
     border: none;
     outline: none;
-    // border-bottom: 2px solid #e0bdbd;
   }
+}
+.form-control:hover {
+  border: 1px solid #000;
+}
+
+.error {
+  border: 1px solid red;
 }

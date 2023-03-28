@@ -47,7 +47,7 @@ checkEmail = (input) => {
   input.value = input.value.trim();
 
   let isEmailError = !regex.test(input.value);
-
+  //   console.log("isMailError", regex.test(input.value));
   if (regex.test(input.value)) {
     showSuccess(input);
   } else {
@@ -59,13 +59,14 @@ checkEmail = (input) => {
 
 // kiểm tra phone
 checkPhone = (input) => {
-  let vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
-  let flag = false;
+  let vnf_regex = /(84|0[3|5|7|8|9])+([0-9]{8})\b/g;
   input.value = input.value.trim();
 
   let isPhoneError = !vnf_regex.test(input.value);
-  if (vnf_regex.test(input.value) == false) {
+  console.log("isPhoneError", vnf_regex.test(input.value));
+  if (vnf_regex.test(input.value)) {
     showSuccess(input);
+    // alert("đúng");
   } else {
     showError(input, "Phone Invalid");
   }
@@ -77,12 +78,12 @@ checkLenghtError = (input, min, max) => {
   input.value = input.value.trim();
 
   if (input.value.length < min) {
-    showError(input, `Phai nhập ít nhất ${min} ký tự`);
+    showError(input, `Enter at least ${min} characters`);
     return true;
   }
 
   if (input.value.length > max) {
-    showError(input, `Không được vượt ${max} ký tự`);
+    showError(input, `Must not exceed  ${max} characters`);
     return true;
   }
 
@@ -97,12 +98,12 @@ const addUser = () => {
   //to stop the form submitting
   let user = {
     id: Date.now(),
-    firstName: firstName,
-    lastName: lastName,
-    email: email,
-    phoneNumber: phoneNumber,
-    city: city,
-    state: state,
+    firstName: firstName.value,
+    lastName: lastName.value,
+    email: email.value,
+    phoneNumber: phoneNumber.value,
+    city: city.value,
+    state: state.value,
   };
 
   // thêm vào mảng
@@ -118,25 +119,31 @@ const addUser = () => {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  let isEmptyError = checkEmptyError([
-    firstName,
-    lastName,
-    email,
-    phoneNumber,
-    city,
-    state,
-  ]);
-  console.log(checkEmptyError([firstName]));
-  let isEmailError = checkEmail(email);
-  let isPhoneError = checkPhone(phoneNumber);
-  let ischeckFirstError = checkLenghtError(firstName, 3, 10);
-  let ischeckLastError = checkLenghtError(lastName, 3, 10);
-
-  console.log(checkEmail(email));
-  console.log(checkPhone(phoneNumber));
-  console.log(checkLenghtError(firstName, 3, 10));
-
-  if (!isEmptyError && !isEmailError && !isPhoneError) {
-    addUser();
+  let isEmptyError = checkEmptyError([firstName, lastName, email, phoneNumber]);
+  if (!isEmptyError) {
+    let isEmailError = checkEmail(email);
+    if (!isEmailError) {
+        let isPhoneError = checkPhone(phoneNumber);
+        if (!isPhoneError) {
+            let ischeckFirstError = checkLenghtError(firstName, 3, 10);
+            let ischeckLastError = checkLenghtError(lastName, 3, 10);
+            if (!ischeckFirstError && !ischeckLastError) {
+                addUser();
+            }
+        }
+    }
   }
+
+  
+  
+//   let ischeckLastError = checkLenghtError(lastName, 3, 10);
+//   //   console.log("checkEmptyError", checkEmptyError([firstName]));
+
+//   //   console.log("checkEmail", checkEmail(email));
+//   //   console.log("checkPhone", checkPhone(phoneNumber));
+//   //   console.log("checkLenghtError", checkLenghtError(firstName, 3, 10));
+
+//   if (!isEmptyError && !isEmailError && !isPhoneError) {
+//     addUser();
+//   }
 });

@@ -63,9 +63,12 @@ header {
   .header__top--main {
     display: none;
   }
+  .menu__header--desktop{
+    display: none;
+  }
   .mobile__header {
-    // background-color: #ffcd00;
-    // height: 113px;
+    background-color: #ffcd00;
+    height: 113px;
     .header__bottom--main {
       padding-top: 20px;
       padding-bottom: 10px;

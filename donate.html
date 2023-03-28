@@ -222,7 +222,7 @@
                   </div> -->
 
                     <div class="form__input--info">
-                      <div class="info__title">First name:*</div>
+                      <label class="info__title">First name:*</label>
                       <div class="info__input">
                         <div class="form-control">
                           <input
@@ -238,7 +238,7 @@
                       </div>
                     </div>
                     <div class="form__input--info">
-                      <div class="info__title">Last name:*</div>
+                      <label class="info__title">Last name:*</label>
                       <div class="info__input">
                         <div class="form-control">
                           <input
@@ -254,7 +254,7 @@
                       </div>
                     </div>
                     <div class="form__input--info">
-                      <div class="info__title">Email:*</div>
+                      <label class="info__title">Email:*</label>
                       <div class="info__input">
                         <div class="form-control">
                           <input
@@ -270,7 +270,7 @@
                       </div>
                     </div>
                     <div class="form__input--info">
-                      <div class="info__title">Phone Number:*</div>
+                      <label class="info__title">Phone Number:*</label>
                       <div class="info__input">
                         <div class="form-control">
                           <input
@@ -287,7 +287,7 @@
                     </div>
                     <div class="form__info--bottom">
                       <div class="form__input--info">
-                        <div class="info__title">city:*</div>
+                        <label class="info__title">City:</label>
                         <div class="info__input">
                           <div class="form-control">
                             <input
@@ -303,21 +303,32 @@
                         </div>
                       </div>
                       <div class="form__input--info">
-                        <div class="info__title">state:*</div>
+                        <label class="info__title">State:</label>
                         <div class="info__input">
-                          <div class="form-control state">
-                            <input
+                          <div class="">
+                            <select
+                              class="form-select type__text"
+                              aria-label="Default select example"
+                              id="state"
+                              name="state"
+                            >
+                              <option selected>Select state</option>
+                              <option value="1">Tốt</option>
+                              <option value="2">Bình thường</option>
+                              <option value="3">Bệnh</option>
+                            </select>
+                            <!-- <input
                               class="type__text"
                               id="state"
                               name="state"
                               type="text"
                               placeholder="Select state"
-                            />
-                            <img
+                            /> -->
+                            <!-- <img
                               class="icon__down"
                               src="./img/form/down.svg"
                               alt=""
-                            />
+                            /> -->
                             <small></small>
                             <span></span>
                           </div>
