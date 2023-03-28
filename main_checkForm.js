@@ -9,7 +9,7 @@ let form = document.getElementById("form");
 
 // check rỗng
 showError = (input, message) => {
-  console.log("input.parentElement", input.parentElement);
+//   console.log("input.parentElement", input.parentElement);
   let parent = input.parentElement;
   let small = parent.querySelector("small");
   parent.classList.add("error");
@@ -130,13 +130,9 @@ form.addEventListener("submit", (e) => {
   let ischeckFirstError = checkLenghtError(firstName, 3, 10);
   let ischeckLastError = checkLenghtError(lastName, 3, 10);
 
-  if (
-    !isEmptyError ||
-    !isEmailError ||
-    !isPhoneError ||
-    !ischeckFirstError ||
-    !ischeckLastError
-  ) {
+  if (isEmptyError) {
     addUser();
+  } else {
+    alert("lỗi");
   }
 });
