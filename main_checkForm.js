@@ -9,7 +9,7 @@ let form = document.getElementById("form");
 
 // check rỗng
 showError = (input, message) => {
-//   console.log("input.parentElement", input.parentElement);
+  //   console.log("input.parentElement", input.parentElement);
   let parent = input.parentElement;
   let small = parent.querySelector("small");
   parent.classList.add("error");
@@ -30,6 +30,7 @@ checkEmptyError = (listInput) => {
 
     if (!input.value) {
       showError(input, "This field is required.");
+      isEmptyError = true;
     } else {
       showSuccess(input);
     }
@@ -125,14 +126,17 @@ form.addEventListener("submit", (e) => {
     city,
     state,
   ]);
+  console.log(checkEmptyError([firstName]));
   let isEmailError = checkEmail(email);
   let isPhoneError = checkPhone(phoneNumber);
   let ischeckFirstError = checkLenghtError(firstName, 3, 10);
   let ischeckLastError = checkLenghtError(lastName, 3, 10);
 
-  if (isEmptyError) {
+  console.log(checkEmail(email));
+  console.log(checkPhone(phoneNumber));
+  console.log(checkLenghtError(firstName, 3, 10));
+
+  if (!isEmptyError && !isEmailError && !isPhoneError) {
     addUser();
-  } else {
-    alert("lỗi");
   }
 });
