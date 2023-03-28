@@ -1,51 +1,3 @@
-// let clickSubmit = document.getElementById("clickSubmit");
-
-// let firstName = document.getElementById("firstName");
-// let lastName = document.getElementById("lastName");
-// let email = document.getElementById("email");
-// let phoneNumber = document.getElementById("phoneNumber");
-// let city = document.getElementById("city");
-// let state = document.getElementById("state");
-
-// // check rỗng
-// showError = (input, message) => {
-//   console.log("input.parentElement", input.parentElement);
-//   let parent = input.parentElement;
-//   let small = parent.querySelector("small");
-//   console.log("small", small);
-//   parent.classList.add("error");
-//   small.innerText = message;
-// };
-
-// showSuccess = (input) => {
-//   let parent = input.parentElement;
-//   let small = parent.querySelector("small");
-//   parent.classList.remove("error");
-//   small.innerText = "";
-// };
-
-// checkEmptyError = (listInput) => {
-//   let isEmptyError = false;
-//   let ms = "Không dduocj để trống"
-//   listInput.forEach((input) => {
-//     input.value = input.value.trim();
-
-//     if (!input.value) {
-//       showError(input, ms);
-//     } else {
-//       showSuccess(input);
-//     }
-//   });
-
-//   return isEmptyError;
-// };
-
-// clickSubmit.addEventListener("submit", (e) => {
-//   e.preventDefault();
-
-//   let isEmptyError = checkEmptyError([firstName, lastName, email]);
-// });
-
 let firstName = document.getElementById("firstName");
 let lastName = document.getElementById("lastName");
 let email = document.getElementById("email");
@@ -53,13 +5,6 @@ let phoneNumber = document.getElementById("phoneNumber");
 let city = document.getElementById("city");
 let state = document.getElementById("state");
 
-// let username = document.getElementById("username");
-// let password = document.getElementById("password");
-// let cfpassword = document.getElementById("cfpassword");
-
-// let email = document.getElementById("email");
-
-let submit = document.getElementById("submit");
 let form = document.getElementById("form");
 
 // check rỗng
