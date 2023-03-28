@@ -1,0 +1,112 @@
+<form class="form" id="clickSubmit">
+                  <p class="form__title">Express Interest in Future Openings</p>
+                  <div class="form__info">
+                    <div class="form__input--info">
+                      <div class="info__title">First name:*</div>
+                      <div class="info__input">
+                        <input
+                          class="type__text"
+                          id="firstName"
+                          name="firstName"
+                          type="text"
+                          placeholder="Enter your first name"
+                        />
+                        <small></small>
+                        <span></span>
+                      </div>
+                      <div class="error">This field is required.</div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="form__input--info">
+                      <div class="info__title">Last name:*</div>
+                      <div class="info__input">
+                        <input
+                          class="type__text"
+                          id="lastName"
+                          name="lastName"
+                          type="text"
+                          placeholder="Enter your last name"
+                        />
+                        <small></small>
+                        <span></span>
+                      </div>
+                      <div class="error">This field is required.</div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="form__input--info">
+                      <div class="info__title">Email:*</div>
+                      <div class="info__input">
+                        <input
+                          class="type__text"
+                          id="email"
+                          name="email"
+                          type="email"
+                          placeholder="Enter your email"
+                        />
+                      </div>
+                      <div class="error">This field is required.</div>
+                      <div class="errorEmail">
+                        Incorrect format(Duy123@gmail.com).
+                      </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="form__input--info">
+                      <div class="info__title">Phone number:*</div>
+                      <div class="info__input">
+                        <input
+                          class="type__text"
+                          id="phoneNumber"
+                          name="phoneNumber"
+                          type="text"
+                          placeholder="Enter your phone #"
+                        />
+                      </div>
+                      <div class="error">This field is required.</div>
+
+                      <div class="errorPhone">Incorrect format.</div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="form__info--bottom">
+                      <div class="form__input--info input__size">
+                        <div class="info__title">City:</div>
+                        <div class="info__input">
+                          <input
+                            class="type__text"
+                            id="city"
+                            name="city"
+                            type="text"
+                            placeholder="Enter your city"
+                          />
+                        </div>
+                        <div class="error">This field is required.</div>
+                      </div>
+                      <!-- 5 -->
+                      <div class="form__input--info input__size">
+                        <div class="info__title">State:</div>
+                        <div class="info__input state">
+                          <input
+                            class="type__text"
+                            id="state"
+                            name="state"
+                            type="text"
+                            placeholder="Select state"
+                          />
+                          <img
+                            class="icon__down"
+                            src="./img/form/down.svg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="error">This field is required.</div>
+                      </div>
+                      <!-- 6 -->
+                    </div>
+
+                    <!-- submit -->
+                    <button type="submit" class="submit btn-yl">
+                      <p class="bold__text text__submit">SUBMIT NOW</p>
+                      <img src="./img/arrow-right-solid.svg" alt="" />
+                    </button>
+                  </div>
+                  <!-- <button type="submit">Submit</button> -->
+                </form>

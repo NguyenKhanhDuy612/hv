@@ -70,23 +70,11 @@
   // click để thêm user
   // clickSubmit.addEventListener("submit", addUser);
 
-  // Hàm kiểm tra
-  checkForm = (e) => {
-    e.preventDefault();
+  // Kieemr tra roongx
 
-    // điều kiện phone
-    let vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
-    // điều kiện mail
-    let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    // lấy tất cả input trong form
+  checkValue = () => {
     let inputElements = document.querySelectorAll("#clickSubmit input");
-
-    // check errors
-
-    //
-    let flag = false; // biến kiểm tra
-
-    // Kiểm tra rỗng
+    let flag = false;
     for (let i = 0; i < inputElements.length; i++) {
       // && inputElements[i].name
       // console.log("inputElements[i]", inputElements[i].value);
@@ -100,41 +88,83 @@
         document.getElementsByClassName("info__input")[i].style.border = "none";
       }
     }
+  };
 
-    // Kiểm tra mail hợp lệ
-    // duy.nguyen.k@gmail.com
-    if (flag != true) {
-      if (email.value.match(mailformat) == false) {
-        flag = true;
-        document.getElementsByClassName("info__input")[2].style.border =
-          "1px solid red";
-        document.getElementsByClassName("errorPhone")[0].style.display =
-          "block";
-      } else {
-        document.getElementsByClassName("info__input")[2].style.border = "none";
-        document.getElementsByClassName("errorPhone")[0].style.display = "none";
-      }
-    }
-    // Kiểm tra số điện thoại hợp lệ
-    if (flag != true) {
-      if (vnf_regex.test(phoneNumber.value) == false) {
-        flag = true;
-        document.getElementsByClassName("info__input")[3].style.border =
-          "1px solid red";
-        document.getElementsByClassName("errorPhone")[0].style.display =
-          "block";
-      } else {
-        document.getElementsByClassName("info__input")[3].style.border = "none";
-        document.getElementsByClassName("errorPhone")[0].style.display = "none";
-      }
-    }
+  checkEmail = () => {
+    const mailformat =
+      /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 
-    // Nếu tất cả hợp lệ thì thêm vào mảng
-    if (flag != true) {
-      addUser();
+    if (email.value.match(mailformat) == false) {
+      flag = true;
+      document.getElementsByClassName("info__input")[2].style.border =
+        "1px solid red";
+      document.getElementsByClassName("errorPhone")[0].style.display = "block";
+    } else {
+      document.getElementsByClassName("info__input")[2].style.border = "none";
+      document.getElementsByClassName("errorPhone")[0].style.display = "none";
     }
   };
 
+  checkPhone = () => {
+    let vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+    let flag = false;
+    if (vnf_regex.test(phoneNumber.value) == false) {
+      flag = true;
+      document.getElementsByClassName("info__input")[3].style.border =
+        "1px solid red";
+      document.getElementsByClassName("errorPhone")[0].style.display = "block";
+    } else {
+      document.getElementsByClassName("info__input")[3].style.border = "none";
+      document.getElementsByClassName("errorPhone")[0].style.display = "none";
+    }
+  };
+  // // Hàm kiểm tra
+  // checkForm = (e) => {
+
+  //   // điều kiện phone
+  //   // điều kiện mail
+  //   // let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  //   // lấy tất cả input trong form
+
+  //   // check errors
+
+  //   //
+  //   let flag = false; // biến kiểm tra
+
+  //   // Kiểm tra rỗng
+
+  //   // Kiểm tra mail hợp lệ
+  //   // duy.nguyen.k@gmail.com
+  //   if (flag != true) {
+
+  //   }
+  //   // Kiểm tra số điện thoại hợp lệ
+  //   if (flag != true) {
+
+  //   }
+
+  //   // Nếu tất cả hợp lệ thì thêm vào mảng
+  //   if (flag != true) {
+  //     addUser();
+  //   }
+  // };
+
   // nhấn vào nút submit
-  clickSubmit.addEventListener("submit", checkForm);
+  clickSubmit.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let isCheckValue = checkValue();
+    let ischeckEmail = checkEmail();
+    let ischeckPhone = checkPhone();
+console.log(isCheckValue,isCheckValue,isCheckValue);
+
+    if (isCheckValue || ischeckEmail || ischeckPhone) {
+      addUser();
+    } else {
+     alert("Looix")
+    }
+    // if (!isCheckValue) {
+    //   checkPhone();
+    // }
+  });
 }
